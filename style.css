@@ -146,6 +146,30 @@ body {
   &:hover {
     background-color: hsl(169, 82%, 17%);
   }
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.success-message {
+  display: none;
+  background-color: var(--grey-darker);
+  color: white;
+  padding: min(1rem, 2vw);
+  border-radius: 1rem;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.5rem;
+    .heading-message {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  }
+  .content-message {
+    color: hsl(186, 15%, 80%);
+  }
 }
 
 @media (max-width: 30rem) {
